@@ -1,0 +1,6 @@
+ListenAddress 0.0.0.0
+Port 22
+PermitRootLogin no
+UseDNS no
+AuthenticationMethods publickey,keyboard-interactive
+Subsystem       sftp    /usr/libexec/sftp-server

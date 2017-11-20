@@ -1,0 +1,8 @@
+ListenAddress 0.0.0.0
+Port 22
+PasswordAuthentication no
+UsePAM yes
+ChallengeResponseAuthentication yes
+UseDNS no
+PermitRootLogin yes
+AuthenticationMethods publickey,keyboard-interactive

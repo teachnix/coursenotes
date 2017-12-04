@@ -1,0 +1,7 @@
+location:
+  - datacenter
+  - sanfrancisco
+roles:
+  - db
+  - production
+  

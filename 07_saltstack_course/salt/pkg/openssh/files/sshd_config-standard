@@ -1,0 +1,7 @@
+# Standard SSH config file that permits passwords or keys 
+ListenAddress 0.0.0.0
+Port 22
+PasswordAuthentication yes
+PubkeyAuthentication yes
+UseDNS no
+PermitRootLogin yes

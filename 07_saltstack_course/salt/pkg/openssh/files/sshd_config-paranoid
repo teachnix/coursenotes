@@ -1,0 +1,10 @@
+# Paranoid SSH config
+# Only allow specific users and specify the listen IP address
+
+ListenAddress {{ salt['pillar.get']('openssh:listen') }}
+Port 22
+PasswordAuthentication no
+UseDNS no
+PermitRootLogin no
+AuthenticationMethods publickey,keyboard-interactive
+AllowUsers {{ salt['pillar.get']('openssh:users') }}

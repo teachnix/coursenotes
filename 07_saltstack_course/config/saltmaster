@@ -3,7 +3,7 @@ listen: 192.168.0.75
 file_roots:
   base:
     - /srv/salt
-	
+
 pillar_roots:
   base:
     - /srv/pillar

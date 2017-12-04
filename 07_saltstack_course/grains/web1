@@ -1,0 +1,7 @@
+location:
+  - datacenter
+  - sfo
+roles:
+  - production
+  - web
+  

@@ -1,0 +1,7 @@
+location:
+  - office
+  - los angeles
+roles:
+  - db  
+  - development
+  - web

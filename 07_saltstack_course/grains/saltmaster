@@ -1,0 +1,6 @@
+location:
+  - office
+  - losangeles
+roles:
+  - production
+  - web

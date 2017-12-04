@@ -6,5 +6,5 @@ Install a standardized MOTD:
 {% if grains['os'] = 'FreeBSD' %}
 Remove the fortune package:
   file.absent:
-     - name: /usr/bin/fortuneaa
+     - name: /usr/bin/fortune
 {% endif %}

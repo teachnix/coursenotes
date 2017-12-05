@@ -21,5 +21,6 @@
     - pkg.nginx.service
 
   'G@roles:web and G@roles:development':
+    - match: compound
     - pkg.tmux
     - pkg.vim

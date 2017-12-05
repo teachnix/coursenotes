@@ -3,7 +3,7 @@ Install a standardized MOTD:
     - name: /etc/motd
     - source: salt://motd/files/motd
 
-{% if grains['os'] = 'FreeBSD' %}
+{% if grains['os'] == 'FreeBSD' %}
 Remove the fortune package:
   file.absent:
      - name: /usr/bin/fortune

@@ -1,0 +1,10 @@
+pkg update
+pkg install -y py27-certbot
+certbot certonly --standalone -d mumble.teachnixlab.com --email lab@teachnix.com --agree-tos --non-interactive
+pw group add certs
+pw usermod murmur -G certs
+id murmur
+chown root:certs /usr/local/etc/letsencrypt/archive/
+chmod 750 /usr/local/etc/letsencrypt/archive/
+chmod 750 /usr/local/etc/letsencrypt/live/
+chown root:certs /usr/local/etc/letsencrypt/live/

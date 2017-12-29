@@ -2,7 +2,7 @@
 /home/steam/.steam/steamcmd/kf2/Binaries/Win64/KFGameSteamServer.bin.x86_64 kf-bioticslab
 
 # Enable the web server and set the port
-vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer-KFEngine.ini
+vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/KFWeb.ini
 
 # Options to change for the web server and port
 bEnabled=true

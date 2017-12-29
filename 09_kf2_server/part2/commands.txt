@@ -1,0 +1,19 @@
+# Upgrade the system
+apt-get update && apt-get upgrade -y
+
+# Create Steam user for running the server
+useradd -m steam
+
+# Install SteamCMD, tmux, and htop
+apt-get install steamcmd tmux htop
+
+# Change to steam user
+su - steam
+
+# Start a tmux session
+steamcmd +login anonymous +force_install_dir ./kf2 +app_update 232130 +exit
+
+Video 2 - Modifying settings
+
+# Enable the web server and set port
+vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer-KFEngine.ini

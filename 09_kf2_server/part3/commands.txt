@@ -1,12 +1,15 @@
 # Start the Killing Floor 2 server to generate the files we need to edit
 /home/steam/.steam/steamcmd/kf2/Binaries/Win64/KFGameSteamServer.bin.x86_64 kf-bioticslab
 
-# Enable the web server and set a password for the WebUI
+# Enable the web server and set the port
 vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer-KFEngine.ini
 
 # Options to change for the web server and port
 bEnabled=true
 ListenPort=8080
+
+# Change the admin password for the WebUI
+vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer-KFGame.ini
 
 # Add the password the admin user
 AdminPassword=YourDesiredPassword

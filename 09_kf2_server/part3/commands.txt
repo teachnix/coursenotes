@@ -1,0 +1,26 @@
+# Enable the web server and set port
+vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer-KFEngine.ini
+
+bEnabled=true
+ListenPort=8080
+
+# Add the password and username for webadmin
+/home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer-KFEngine.ini
+
+AdminPassword=YourDesiredPassword
+
+# Change difficulty
+#This sets the server difficulty. 0 = Normal, 1 = Hard, 2 = Suicidal, 3 = Hell on Earth
+
+vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer-KFGame.ini
+
+GameDifficulty=3
+
+# Running the Game
+
+/home/steam/.steam/steamcmd/kf2/Binaries/Win64/KFGameSteamServer.bin.x86_64 kf-bioticslab
+
+# Connect to your WebUI
+http://your.domain.com:8080
+or
+http://your-server-ip:8080

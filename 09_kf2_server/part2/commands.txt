@@ -5,10 +5,13 @@ apt-get update && apt-get upgrade -y
 useradd -m steam
 
 # Install SteamCMD, tmux, and htop
-apt-get install steamcmd tmux htop
+apt-get install -y steamcmd tmux htop
 
 # Change to steam user
 su - steam
+
+# Start a tmux session
+tmux
 
 # Start a tmux session
 steamcmd +login anonymous +force_install_dir ./kf2 +app_update 232130 +exit

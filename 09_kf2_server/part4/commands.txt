@@ -1,0 +1,32 @@
+add-apt-repository ppa:certbot/certbot
+apt-get update
+apt-get install -y certbot nginx
+
+# Generate the Let's Encrypt Certs
+certbot certonly --standalone -d kf2server.teachnixlab.com --email lab@teachnix.com --agree-tos --non-interactive
+
+# Create an Nginx user
+useradd nginx -s /usr/sbin/nologin --system
+
+# Add a Certs group
+groupadd certs --system
+
+# Add the Nginx user to the certs group
+usermod -aG certs nginx
+
+# Verify the groups Nginx is in
+id nginx
+
+# Change the permissions for the Let's Encrypt files
+chown root:certs /etc/letsencrypt/archive/
+chmod 750 /etc/letsencrypt/archive/
+chmod 750 /etc/letsencrypt/live/
+chown root:certs /etc/letsencrypt/live/
+
+# Modify the main Nginx config
+vi /etc/nginx/nginx.conf
+vi /etc/nginx/conf.d/kf2server.conf
+
+# Enable Nginx at boot and start the service
+systemctl enable nginx.service
+systemctl start nginx.service

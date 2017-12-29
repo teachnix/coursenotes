@@ -14,12 +14,8 @@ vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer-KFGame.ini
 # Add the password the admin user
 AdminPassword=YourDesiredPassword
 
-# Change difficulty
-vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer-KFGame.ini
-
 #This sets the server difficulty. 0 = Normal, 1 = Hard, 2 = Suicidal, 3 = Hell on Earth
 GameDifficulty=3
-
 
 # Connect to your WebUI
 http://your.domain.com:8080

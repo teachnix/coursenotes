@@ -1,0 +1,2 @@
+vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer-KFEngine.ini
+bUsedForTakeover=FALSE

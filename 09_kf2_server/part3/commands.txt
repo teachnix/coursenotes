@@ -1,5 +1,5 @@
 # Enable the web server and set a password for the WebUI
-vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer-KFEngine.ini
+vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer/LinuxServer-KFEngine.ini
 
 # Options to change for the web server and port
 bEnabled=true
@@ -9,7 +9,7 @@ ListenPort=8080
 AdminPassword=YourDesiredPassword
 
 # Change difficulty
-vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer-KFGame.ini
+vi /home/steam/.steam/steamcmd/kf2/KFGame/Config/LinuxServer/LinuxServer-KFGame.ini
 
 #This sets the server difficulty. 0 = Normal, 1 = Hard, 2 = Suicidal, 3 = Hell on Earth
 GameDifficulty=3
